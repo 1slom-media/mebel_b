@@ -1,61 +1,14 @@
 [
   {
-    "_id": "0638b905-3170-41d6-954f-f24cc5d37ad0",
-    "colId": "history",
-    "containerId": "",
-    "name": "http://localhost:5000/contact_us",
-    "url": "http://localhost:5000/contact_us/2",
-    "method": "GET",
-    "sortNum": 0,
-    "created": "2022-10-31T11:46:57.509Z",
-    "modified": "2022-10-31T11:52:59.925Z",
-    "headers": [],
-    "params": [],
-    "body": {
-      "type": "json",
-      "raw": "{\n  \"telephone\":\"+998976545564\"\n}",
-      "form": []
-    },
-    "tests": []
-  },
-  {
     "_id": "dcc0f07e-d287-4a14-8835-34c9d355e92d",
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:5000/contact_us/1",
-    "url": "http://localhost:5000/contact_us/1",
+    "url": "http://localhost:5000/contact_us",
     "method": "GET",
     "sortNum": 0,
     "created": "2022-10-31T11:47:03.367Z",
-    "modified": "2022-10-31T11:47:03.557Z",
-    "headers": [],
-    "params": [],
-    "tests": []
-  },
-  {
-    "_id": "1a33b757-44be-4f8a-be76-b8139e0458fc",
-    "colId": "history",
-    "containerId": "",
-    "name": "http://localhost:5000/contact_us/2",
-    "url": "http://localhost:5000/contact_us/2",
-    "method": "GET",
-    "sortNum": 0,
-    "created": "2022-10-31T11:47:05.385Z",
-    "modified": "2022-10-31T11:47:05.613Z",
-    "headers": [],
-    "params": [],
-    "tests": []
-  },
-  {
-    "_id": "e6034d70-a357-4ce0-a153-827e36c0ce9f",
-    "colId": "history",
-    "containerId": "",
-    "name": "http://localhost:5000/contact_us/3",
-    "url": "http://localhost:5000/contact_us/3",
-    "method": "GET",
-    "sortNum": 0,
-    "created": "2022-10-31T11:47:07.226Z",
-    "modified": "2022-10-31T11:47:07.365Z",
+    "modified": "2022-10-31T18:14:34.135Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -99,44 +52,6 @@
     "tests": []
   },
   {
-    "_id": "be04b5d4-8483-4d8d-ba5b-b975938df930",
-    "colId": "history",
-    "containerId": "",
-    "name": "http://localhost:5000/contact_us/4",
-    "url": "http://localhost:5000/contact_us/4",
-    "method": "PUT",
-    "sortNum": 0,
-    "created": "2022-10-31T11:48:05.759Z",
-    "modified": "2022-10-31T11:50:11.193Z",
-    "headers": [],
-    "params": [],
-    "body": {
-      "type": "json",
-      "raw": "{\n  \"telephone\":\"+998976545564\"\n}",
-      "form": []
-    },
-    "tests": []
-  },
-  {
-    "_id": "a418a686-dbe3-4781-a0d1-53c45c0d896a",
-    "colId": "history",
-    "containerId": "",
-    "name": "http://localhost:5000/contact_us/4",
-    "url": "http://localhost:5000/contact_us/4",
-    "method": "GET",
-    "sortNum": 0,
-    "created": "2022-10-31T11:48:41.306Z",
-    "modified": "2022-10-31T11:49:09.687Z",
-    "headers": [],
-    "params": [],
-    "body": {
-      "type": "json",
-      "raw": "{\n  \"telephone\":\"+998976545564\"\n}",
-      "form": []
-    },
-    "tests": []
-  },
-  {
     "_id": "61b782b5-d059-48e7-a411-58bb00ff37ac",
     "colId": "history",
     "containerId": "",
@@ -153,6 +68,128 @@
       "raw": "{\n  \"telephone\":\"+998976545564\"\n}",
       "form": []
     },
+    "tests": []
+  },
+  {
+    "_id": "9946824f-63ed-4141-8cdd-7eb62b24dc75",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/stretch_ceilings",
+    "url": "http://localhost:5000/stretch_ceilings/3",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-31T18:37:50.073Z",
+    "modified": "2022-10-31T19:13:01.222Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "0a5f44f2-ec08-475d-99c6-9c3167ee67cf",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/stretch_ceilings",
+    "url": "http://localhost:5000/stretch_ceilings",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-10-31T18:45:41.949Z",
+    "modified": "2022-10-31T19:11:59.276Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "titleUz",
+          "value": "Mat shift"
+        },
+        {
+          "name": "titleEn",
+          "value": "Matte ceiling"
+        },
+        {
+          "name": "titleRu",
+          "value": "Матовый потолок"
+        },
+        {
+          "name": "money",
+          "value": "600.000"
+        },
+        {
+          "name": "skidka",
+          "value": "50%"
+        },
+        {
+          "name": "shades",
+          "value": "190"
+        }
+      ],
+      "files": [
+        {
+          "name": "image",
+          "value": "..\\..\\..\\..\\..\\Downloads\\Telegram Desktop\\tg_img\\photo_2022-05-13_14-45-46.jpg"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "e94ee0e2-548b-497b-a7a6-3119fc106152",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/stretch_ceilings/2",
+    "url": "http://localhost:5000/stretch_ceilings/3",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-10-31T18:58:31.072Z",
+    "modified": "2022-10-31T19:14:39.828Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"titleUz\":\"mat shiftt\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "53655d5a-2790-4e25-b7f4-9668fd5b7b1a",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/stretch_ceilings_img/2",
+    "url": "http://localhost:5000/stretch_ceilings_img/2",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-10-31T19:09:50.463Z",
+    "modified": "2022-10-31T19:09:50.721Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [],
+      "files": [
+        {
+          "name": "image",
+          "value": "..\\..\\..\\..\\..\\Pictures\\fon\\229-2299852_khana-kaba-most-beautiful.jpg"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "c0039e12-35ee-40c5-aaa0-e0754499b4d0",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/stretch_ceilings/2",
+    "url": "http://localhost:5000/stretch_ceilings/3",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2022-10-31T19:11:20.162Z",
+    "modified": "2022-10-31T19:16:08.426Z",
+    "headers": [],
+    "params": [],
     "tests": []
   }
 ]

@@ -3,7 +3,8 @@ CREATE DATABASE mebel_b;
 
 CREATE TABLE IF NOT EXISTS contact(
     id serial primary key,
-    telephone varchar(15) not null
+    telephone varchar(15) not null,
+    date timestamp default current_timestamp
 );
 
 CREATE TABLE IF NOT EXISTS comment(
@@ -32,6 +33,7 @@ CREATE TABLE IF NOT EXISTS strech(
     money varchar(20) not null,
     skidka varchar(10) not null,
     shades varchar(10) not null,
+    date timestamp default current_timestamp,
     image text not null
 );
 
@@ -39,7 +41,8 @@ CREATE TABLE IF NOT EXISTS ceiling(
     id serial primary key,
     titleUz varchar(250) not null,
     titleEn varchar(250) not null,
-    titleRu varchar(250) not null
+    titleRu varchar(250) not null,
+    date timestamp default current_timestamp,
 );
 
 CREATE TABLE IF NOT EXISTS cuisine(
@@ -52,5 +55,6 @@ CREATE TABLE IF NOT EXISTS cuisine(
     image text not null,
     descriptionEn text not null,
     descriptionUz text not null,
-    descriptionRu text not null
+    descriptionRu text not null,
+    date timestamp default current_timestamp,
 );
