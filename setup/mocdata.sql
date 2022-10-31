@@ -1,0 +1,1 @@
+insert into contact (telephone) values('+998915039390'),('+998909876766'),('+99891667891');
