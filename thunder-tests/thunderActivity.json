@@ -79,7 +79,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-10-31T18:37:50.073Z",
-    "modified": "2022-10-31T19:51:39.181Z",
+    "modified": "2022-10-31T20:04:19.517Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -139,17 +139,29 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:5000/stretch_ceilings/2",
-    "url": "http://localhost:5000/stretch_ceilings/3",
+    "url": "http://localhost:5000/stretch_ceilings/1",
     "method": "PUT",
     "sortNum": 0,
     "created": "2022-10-31T18:58:31.072Z",
-    "modified": "2022-10-31T19:14:39.828Z",
+    "modified": "2022-10-31T20:04:35.427Z",
     "headers": [],
     "params": [],
     "body": {
-      "type": "json",
-      "raw": "{\n  \"titleUz\":\"mat shiftt\"\n}",
-      "form": []
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "titleUz",
+          "value": "matt shifft o`zgardi"
+        }
+      ],
+      "files": [
+        {
+          "name": "image",
+          "value": "..\\..\\..\\..\\..\\Downloads\\Telegram Desktop\\tg_img\\photo_2022-06-27_12-31-14.jpg",
+          "isDisabled": true
+        }
+      ]
     },
     "tests": []
   },

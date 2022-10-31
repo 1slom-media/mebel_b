@@ -19,7 +19,8 @@ const PUTSTRETCH = `
             titleRu,
             money,
             skidka,
-            shades
+            shades,
+            image
         from strech
         where id = $1    
     ) update strech as s 
@@ -53,18 +54,16 @@ const PUTSTRETCH = `
                 case 
                     when length($7) > 1 then $7
                     else o.shades
+                end,
+                image = 
+                case 
+                    when length($8) > 1 then $8
+                    else o.image
                 end
     from old_strech as o   
     where s.id = $1
     returning s.*                 
 `;
-
-const PUTSTRETCHIMG=`
-UPDATE strech
-SET image=$2
-WHERE id=$1
-RETURNING *
-`
 
 const DELETESTRETCH =`
 delete from strech
@@ -75,6 +74,5 @@ export {
     GETSTRETCH,
     POSTSTRETCH,
     PUTSTRETCH,
-    PUTSTRETCHIMG,
     DELETESTRETCH
 }

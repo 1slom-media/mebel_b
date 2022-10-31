@@ -7,8 +7,7 @@ const router = Router();
 router.get("/stretch_ceilings", controller.GET);
 router.get("/stretch_ceilings/:stretchId", controller.GET);
 router.post("/stretch_ceilings",upload.single('image'),controller.POST);
-router.put("/stretch_ceilings/:stretchId", controller.PUT);
-router.put("/stretch_ceilings_img/:stretchId",upload.single('image'),controller.PUTIMG);
+router.put("/stretch_ceilings/:stretchId",upload?.single('image'), controller.PUT);
 router.delete("/stretch_ceilings/:stretchId", controller.DELETE);
 
 

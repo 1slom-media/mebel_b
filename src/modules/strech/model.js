@@ -4,7 +4,6 @@ import {
     GETSTRETCH,
     POSTSTRETCH,
     PUTSTRETCH,
-    PUTSTRETCHIMG,
     DELETESTRETCH
 } from "./query.js";
 
@@ -24,21 +23,14 @@ const POST = async ({titleUz,titleEn,titleRu,money,skidka ,shades},image) => {
     }
 };
 
-const PUT = async ({stretchId},{ titleUz='',titleEn='',titleRu='',money='',skidka='',shades=''}) => {
+const PUT = async ({stretchId},{ titleUz='',titleEn='',titleRu='',money='',skidka='',shades=''},image='') => {
     try {
-      return await fetch(PUTSTRETCH, [stretchId, titleUz,titleEn,titleRu,money,skidka ,shades]);
+      return await fetch(PUTSTRETCH, [stretchId, titleUz,titleEn,titleRu,money,skidka ,shades,image.filename]);
     } catch (error) {
         console.log(error);
     }
 }; 
 
-const PUTIMG = async ({stretchId},image) => {
-    try {
-      return await fetch(PUTSTRETCHIMG, [stretchId,image.filename]);
-    } catch (error) {
-        console.log(error);
-    }
-}; 
 
 const DELETE = async ({stretchId}) => {
     try {
@@ -52,6 +44,5 @@ export default {
     GET,
     POST,
     PUT,
-    DELETE,
-    PUTIMG
+    DELETE
 };

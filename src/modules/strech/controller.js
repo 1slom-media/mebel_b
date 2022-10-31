@@ -24,7 +24,7 @@ const POST = async (req, res) => {
 
 const PUT = async (req, res) => {
     try {
-      const stretch__ceilings = await model.PUT(req.params,req.body);
+      const stretch__ceilings = await model.PUT(req.params,req.body,req.file);
        res.status(202).json({
         status:202,
         message:"stretch__ceilings update",
@@ -33,19 +33,6 @@ const PUT = async (req, res) => {
     } catch (error) {
       return new Error (error.message)
     }
-};
-
-const PUTIMG = async (req, res) => {
-  try {
-    const stretch__ceilings = await model.PUTIMG(req.params,req.file);
-     res.status(202).json({
-      status:202,
-      message:"stretch__ceilings update",
-      data:stretch__ceilings
-    })
-  } catch (error) {
-    return new Error (error.message)
-  }
 };
 
 const DELETE = async (req, res) => {
@@ -66,6 +53,5 @@ export default {
     GET,
     POST,
     PUT,
-    DELETE,
-    PUTIMG
+    DELETE
   };
