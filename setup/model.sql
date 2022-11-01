@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS ceiling(
     titleUz varchar(250) not null,
     titleEn varchar(250) not null,
     titleRu varchar(250) not null,
-    date timestamp default current_timestamp,
+    date timestamp default current_timestamp
 );
 
 CREATE TABLE IF NOT EXISTS cuisine(
@@ -56,5 +56,5 @@ CREATE TABLE IF NOT EXISTS cuisine(
     descriptionEn text not null,
     descriptionUz text not null,
     descriptionRu text not null,
-    date timestamp default current_timestamp,
+    date timestamp default current_timestamp
 );
