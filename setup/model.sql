@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS ceiling(
 
 CREATE TABLE IF NOT EXISTS cuisine(
     id serial primary key,
-    ceiling_id int references ceiling(id),
+    ceiling_id int references ceiling(id) not null,
     titleCuisineUz varchar(250) not null,
     titleCuisineEn varchar(250) not null,
     titleCuisineRu varchar(250) not null,

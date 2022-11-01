@@ -205,29 +205,15 @@
     "tests": []
   },
   {
-    "_id": "d0686f40-5602-4671-8f9c-d4ccc4bcdb5c",
+    "_id": "2159bb56-85eb-4e2d-8ca9-8941b4fc049e",
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:5000/ceiling_option",
     "url": "http://localhost:5000/ceiling_option",
     "method": "GET",
     "sortNum": 0,
-    "created": "2022-10-31T20:30:01.907Z",
-    "modified": "2022-11-01T07:28:42.302Z",
-    "headers": [],
-    "params": [],
-    "tests": []
-  },
-  {
-    "_id": "2159bb56-85eb-4e2d-8ca9-8941b4fc049e",
-    "colId": "history",
-    "containerId": "",
-    "name": "http://localhost:5000/ceiling_option",
-    "url": "http://localhost:5000/ceiling_option",
-    "method": "POST",
-    "sortNum": 0,
     "created": "2022-10-31T20:34:46.138Z",
-    "modified": "2022-10-31T20:48:35.782Z",
+    "modified": "2022-11-01T09:48:44.957Z",
     "headers": [],
     "params": [],
     "body": {
@@ -268,6 +254,168 @@
     "modified": "2022-10-31T20:49:30.653Z",
     "headers": [],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "aa2cfcb2-07fa-4335-9fed-68839ce328cc",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/cuisine",
+    "url": "http://localhost:5000/cuisine/2",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-11-01T09:21:34.425Z",
+    "modified": "2022-11-01T09:52:48.284Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "8b0af417-e20f-4c1c-90a5-ead2ea6b775b",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/cuisine",
+    "url": "http://localhost:5000/cuisine",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-11-01T09:29:51.692Z",
+    "modified": "2022-11-01T09:33:28.608Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "titleCuisineRu",
+          "value": "Матовый потолок на кухню до 16 м2"
+        },
+        {
+          "name": "titleCuisineUz",
+          "value": "Oshxona uchun mat ship 17 m2 gacha"
+        },
+        {
+          "name": "titleCuisineEn",
+          "value": "Matte ceiling for the kitchen up to 10 m2"
+        },
+        {
+          "name": "money",
+          "value": "3.800.000"
+        },
+        {
+          "name": "descriptionRu",
+          "value": "Установка «под ключ» - работа + материал. Рассрочка 0% без банка."
+        },
+        {
+          "name": "descriptionEn",
+          "value": "Turnkey installation - labor + material. Installment 0% without a bank."
+        },
+        {
+          "name": "descriptionUz",
+          "value": "Kalit taslim o'rnatish - ish + material. Banksiz 0% bo'lib to'lash."
+        },
+        {
+          "name": "ceiling_id",
+          "value": "2"
+        }
+      ],
+      "files": [
+        {
+          "name": "image",
+          "value": "..\\..\\..\\..\\..\\Pictures\\fon\\2e74018b373b00b657b1965926b2447d.jpg"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "e497ee43-1593-4631-9f90-5be5aef72369",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/cuisine/2",
+    "url": "http://localhost:5000/cuisine/2",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-11-01T09:51:33.687Z",
+    "modified": "2022-11-01T10:04:06.361Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "titleCuisineUz",
+          "value": "nimadir karochi"
+        },
+        {
+          "name": "titleCuisineEn",
+          "value": "Matte ceiling for the kitchen up to 10 m2",
+          "isDisabled": true
+        },
+        {
+          "name": "money",
+          "value": "3.800.000",
+          "isDisabled": true
+        },
+        {
+          "name": "descriptionRu",
+          "value": "Установка «под ключ» - работа + материал. Рассрочка 0% без банка.",
+          "isDisabled": true
+        },
+        {
+          "name": "descriptionEn",
+          "value": "Turnkey installation - labor + material. Installment 0% without a bank.",
+          "isDisabled": true
+        },
+        {
+          "name": "descriptionUz",
+          "value": "Kalit taslim o'rnatish - ish + material. Banksiz 0% bo'lib to'lash.",
+          "isDisabled": true
+        },
+        {
+          "name": "ceiling_id",
+          "value": "2",
+          "isDisabled": true
+        }
+      ],
+      "files": [
+        {
+          "name": "image",
+          "value": "..\\..\\..\\..\\..\\Pictures\\fon\\289-2897955_photo-wallpaper-background-black-widescreen-wallpaper-black-background.jpg"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "e8ab9648-2c46-40cf-8fa6-4b5d86937bf6",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/cuisine/2",
+    "url": "http://localhost:5000/cuisine/2",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2022-11-01T10:09:16.935Z",
+    "modified": "2022-11-01T10:09:17.228Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "titleCuisineUz",
+          "value": "nimadir karochi"
+        }
+      ],
+      "files": [
+        {
+          "name": "image",
+          "value": "..\\..\\..\\..\\..\\Pictures\\fon\\289-2897955_photo-wallpaper-background-black-widescreen-wallpaper-black-background.jpg"
+        }
+      ]
+    },
     "tests": []
   }
 ]
