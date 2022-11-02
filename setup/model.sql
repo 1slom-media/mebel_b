@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS contact(
     telephone varchar(15) not null,
     date timestamp default current_timestamp
 );
-
+drop table commet;
 CREATE TABLE IF NOT EXISTS comment(
     id serial primary key,
     titleUz varchar(250) not null, 
@@ -16,13 +16,13 @@ CREATE TABLE IF NOT EXISTS comment(
     creating_canvas varchar(10) not null,
     mounting varchar(10) not null,
     Volume varchar(10) not null,
+    money varchar(20) not null,
     image text not null,
     avatar_image text not null,
     client_name_surname varchar(50) not null,
     client_comment_ru text not null,
     client_comment_uz text not null,
     client_comment_en text not null
-
 );
 
 CREATE TABLE IF NOT EXISTS strech(

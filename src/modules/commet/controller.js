@@ -25,7 +25,6 @@ const POST = async (req, res) => {
 const PUT = async (req, res) => {
     try {
       const client = await model.PUT(req.params,req.body,req.files);
-      console.log(req.files);
        res.status(202).json({
         status:202,
         message:"client update",

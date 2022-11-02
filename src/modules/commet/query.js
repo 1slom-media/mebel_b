@@ -6,8 +6,8 @@ const GETCLIENT = `
 `;
 
 const POSTCLIENT =`
-insert into comment (titleUz,titleEn,titleRu,creating_canvas,mounting,Volume,client_name_surname,client_comment_ru,client_comment_uz,client_comment_en,image,avatar_image)
-values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12) returning *
+insert into comment (titleUz,titleEn,titleRu,creating_canvas,mounting,Volume,client_name_surname,client_comment_ru,client_comment_uz,client_comment_en,image,avatar_image,money)
+values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13) returning *
 `;
 
 const PUTCLIENT = `
@@ -25,7 +25,8 @@ const PUTCLIENT = `
             client_comment_uz, 
             client_comment_en,
             image,
-            avatar_image
+            avatar_image,
+            money
         from comment
         where id = $1    
     ) update comment as c 
@@ -89,6 +90,11 @@ const PUTCLIENT = `
                 case 
                     when length($13) > 1 then $13
                     else o.avatar_image
+                end,
+                money = 
+                case 
+                    when length($14) > 1 then $14
+                    else o.money
                 end
     from old_comment as o   
     where c.id = $1
