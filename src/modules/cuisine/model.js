@@ -20,14 +20,14 @@ const POST = async ({ceiling_id,titleCuisineUz,titleCuisineEn,titleCuisineRu,mon
       return await fetch(POSTCUISINE, [ceiling_id,titleCuisineUz,titleCuisineEn,titleCuisineRu,money,descriptionEn,descriptionUz,descriptionRu,image.filename]);
     } catch (error) {
         console.log(error);
-    }
+    } 
 };
 
 const PUT = async ({cuisineId},{ ceiling_id,titleCuisineUz,titleCuisineEn,titleCuisineRu,money,descriptionEn,descriptionUz,descriptionRu},image='') => {
     try {
       return await fetch(PUTCUISINE, [cuisineId,ceiling_id,titleCuisineUz,titleCuisineEn,titleCuisineRu,money,descriptionEn,descriptionUz,descriptionRu,image.filename]);
     } catch (error) {
-        console.log(error);
+        console.log(error); 
     }
 }; 
 

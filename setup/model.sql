@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS contact(
 
 CREATE TABLE IF NOT EXISTS comment(
     id serial primary key,
-    titleUz varchar(250) not null,
+    titleUz varchar(250) not null, 
     titleEn varchar(250) not null,
     titleRu varchar(250) not null,
     date DATE default CURRENT_DATE,
