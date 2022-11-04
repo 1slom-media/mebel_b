@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS contact(
     telephone varchar(15) not null,
     date timestamp default current_timestamp
 );
-drop table commet;
+
 CREATE TABLE IF NOT EXISTS comment(
     id serial primary key,
     titleUz varchar(250) not null, 
