@@ -54,3 +54,9 @@ CREATE TABLE IF NOT EXISTS cuisine(
     descriptionRu text not null,
     date timestamp default current_timestamp
 );
+
+create table if not exists banners(
+    banner_id serial primary key,
+    banner_image text not null,
+    created_at timestamp default current_timestamp  
+);
