@@ -26,7 +26,7 @@ const PUTBANNERS = `
                 end
     from old_banners as o   
     where b.banner_id = $1
-    returning c.*                 
+    returning b.*                 
 `;
 
 
