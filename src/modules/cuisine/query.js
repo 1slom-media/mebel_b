@@ -6,8 +6,8 @@ const GETCUISINE = `
 `;
 
 const POSTCUISINE =`
-insert into cuisine (ceiling_id,titleCuisineUz,titleCuisineEn,titleCuisineRu,money,descriptionEn,descriptionUz,descriptionRu,image)
-values ($1,$2,$3,$4,$5,$6,$7,$8,$9) returning *
+insert into cuisine (ceiling_id,titleCuisineUz,titleCuisineEn,titleCuisineRu,image)
+values ($1,$2,$3,$4,$5) returning *
 `;
 
 const PUTCUISINE = `
@@ -18,10 +18,6 @@ const PUTCUISINE = `
             titleCuisineUz,
             titleCuisineEn,
             titleCuisineRu,
-            money,
-            descriptionEn,
-            descriptionUz,
-            descriptionRu,
             image
         from cuisine
         where id = $1    
@@ -47,29 +43,9 @@ const PUTCUISINE = `
                     when length($5) > 1 then $5
                     else o.titleCuisineRu
                 end,
-                money = 
-                case 
-                    when length($6) > 1 then $6
-                    else o.money
-                end,
-                descriptionEn = 
-                case 
-                    when length($7) > 1 then $7
-                    else o.descriptionEn
-                end,
-                descriptionUz = 
-                case 
-                    when length($8) > 1 then $8
-                    else o.descriptionUz
-                end,
-                descriptionRu = 
-                case 
-                    when length($9) > 1 then $9
-                    else o.descriptionRu
-                end,
                 image = 
                 case 
-                    when length($10) > 1 then $10
+                    when length($6) > 1 then $6
                     else o.image
                 end
     from old_cuisine as o   

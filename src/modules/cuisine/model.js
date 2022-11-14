@@ -15,17 +15,17 @@ const GET = async ({cuisineId=0}) => {
     }
 };
 
-const POST = async ({ceiling_id,titleCuisineUz,titleCuisineEn,titleCuisineRu,money,descriptionEn,descriptionUz,descriptionRu},image) => {
+const POST = async ({ceiling_id,titleCuisineUz,titleCuisineEn,titleCuisineRu,},image) => {
     try {
-      return await fetch(POSTCUISINE, [ceiling_id,titleCuisineUz,titleCuisineEn,titleCuisineRu,money,descriptionEn,descriptionUz,descriptionRu,image.filename]);
+      return await fetch(POSTCUISINE, [ceiling_id,titleCuisineUz,titleCuisineEn,titleCuisineRu,image.filename]);
     } catch (error) {
         console.log(error);
     } 
 };
 
-const PUT = async ({cuisineId},{ ceiling_id,titleCuisineUz,titleCuisineEn,titleCuisineRu,money,descriptionEn,descriptionUz,descriptionRu},image='') => {
+const PUT = async ({cuisineId},{ ceiling_id,titleCuisineUz,titleCuisineEn,titleCuisineRu},image='') => {
     try {
-      return await fetch(PUTCUISINE, [cuisineId,ceiling_id,titleCuisineUz,titleCuisineEn,titleCuisineRu,money,descriptionEn,descriptionUz,descriptionRu,image.filename]);
+      return await fetch(PUTCUISINE, [cuisineId,ceiling_id,titleCuisineUz,titleCuisineEn,titleCuisineRu,image.filename]);
     } catch (error) {
         console.log(error); 
     }
