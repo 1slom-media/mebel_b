@@ -39,7 +39,7 @@ const PUT = async (req, res) => {
 const DELETE = async (req, res) => {
   try {
     const banners = await model.DELETE(req.params);
-    res.status(204).json({
+    res.status(202).json({
       status:204,
       message:"banners deleted",
       data:banners
