@@ -2,7 +2,7 @@ const GETBANNERS = `
     select
         b.*
     from banners as b
-    where b.status = 'active' and case when $1 > 0 then b.banner_id = $1 else true end
+    where case when $1 > 0 then b.banner_id = $1 else true end
 `;
 
 const POSTBANNERS =`
