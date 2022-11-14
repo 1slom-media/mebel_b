@@ -13,10 +13,10 @@ values ($1) returning *
 const PUTBANNERS = `
     with old_banners as (
         select
-        banner_id,
-        banner_image
+            banner_id,
+            banner_image
         from banners
-        where id = $1    
+        where banner_id = $1    
     ) update banners as b 
         set
         banner_image = 
