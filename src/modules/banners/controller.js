@@ -12,9 +12,9 @@ const GET = async (req, res) => {
 const POST = async (req, res) => {
   try {
     const banners = await model.POST(req.file);
-    res.status(204).json({
-      status:204,
-      message:"banners added",
+    res.status(201).json({
+      status:201,
+      message:"banners created",
       data:banners
     })
   } catch (error) {
