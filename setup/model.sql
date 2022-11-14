@@ -65,6 +65,7 @@ create table if not exists region(
     date timestamp default current_timestamp  
 );
 
+drop table partners;
 create table if not exists partners(
     id serial primary key,
     region_id int references region(id) not null,
@@ -72,6 +73,7 @@ create table if not exists partners(
     titleEn varchar(500) not null,
     titleRu varchar(500) not null,
     phone varchar(15) not null,
+    partner_name varchar(32) not null,
     image text not null,
     avatar_image text not null,
     date timestamp default current_timestamp

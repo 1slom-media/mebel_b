@@ -6,8 +6,8 @@ const GETPARTNERS = `
 `;
 
 const POSTPARTNERS =`
-insert into partners (region_id,titleUz,titleEn,titleRu,phone,image,avatar_image)
-values ($1,$2,$3,$4,$5,$6,$7) returning *
+insert into partners (region_id,titleUz,titleEn,titleRu,phone,image,avatar_image,partner_name)
+values ($1,$2,$3,$4,$5,$6,$7,$8) returning *
 `;
 
 const PUTPARTNERS = `
@@ -20,7 +20,8 @@ const PUTPARTNERS = `
             titleRu,
             phone,
             image,
-            avatar_image
+            avatar_image,
+            partner_name
         from partners
         where id = $1    
     ) update partners as p 
@@ -59,6 +60,11 @@ const PUTPARTNERS = `
                 case 
                     when length($8) > 1 then $8
                     else o.avatar_image
+                end,
+                partner_name = 
+                case 
+                    when length($8) > 1 then $8
+                    else o.partner_name
                 end
     from old_partners as o   
     where p.id = $1

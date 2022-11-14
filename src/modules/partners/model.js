@@ -15,17 +15,17 @@ const GET = async ({partnerId=0}) => {
     }
 };
 
-const POST = async ({region_id,titleUz,titleEn,titleRu,phone,},{image:[image],avatar_image:[avatar_image]}) => {
+const POST = async ({region_id,titleUz,titleEn,titleRu,phone,partner_name},{image:[image],avatar_image:[avatar_image]}) => {
     try {
-      return await fetch(POSTPARTNERS, [region_id,titleUz,titleEn,titleRu,phone,image.filename,avatar_image.filename]);
+      return await fetch(POSTPARTNERS, [region_id,titleUz,titleEn,titleRu,phone,image.filename,avatar_image.filename,partner_name]);
     } catch (error) {
         console.log(error);
     } 
 };
 
-const PUT = async ({partnerId},{region_id,titleUz,titleEn,titleRu,phone,},files) => {
+const PUT = async ({partnerId},{region_id,titleUz,titleEn,titleRu,phone,partner_name},files) => {
     try {
-      return await fetch(PUTPARTNERS, [partnerId,region_id,titleUz,titleEn,titleRu,phone,files?.image[0]?.filename,files?.avatar_image[0]?.filename]);
+      return await fetch(PUTPARTNERS, [partnerId,region_id,titleUz,titleEn,titleRu,phone,files?.image[0]?.filename,files?.avatar_image[0]?.filename,partner_name]);
     } catch (error) {
         console.log(error); 
     }
