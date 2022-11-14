@@ -65,7 +65,7 @@ create table if not exists region(
     date timestamp default current_timestamp  
 );
 
-drop table partners;
+
 create table if not exists partners(
     id serial primary key,
     region_id int references region(id) not null,
