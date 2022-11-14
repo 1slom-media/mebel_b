@@ -15,17 +15,17 @@ const GET = async ({clientId=0}) => {
     }
 };
 
-const POST = async ({titleUz,titleEn,titleRu,creating_canvas,mounting,Volume,client_name_surname,client_comment_ru,client_comment_uz,client_comment_en,money},{image:[image],avatar_image:[avatar_image]}) => {
+const POST = async ({titleUz,titleEn,titleRu,client_name_surname,client_comment_ru,client_comment_uz,client_comment_en},{image:[image],avatar_image:[avatar_image]}) => {
     try {
-      return await fetch(POSTCLIENT, [titleUz,titleEn,titleRu,creating_canvas,mounting,Volume,client_name_surname,client_comment_ru,client_comment_uz,client_comment_en,image.filename,avatar_image.filename,money]);
+      return await fetch(POSTCLIENT, [titleUz,titleEn,titleRu,client_name_surname,client_comment_ru,client_comment_uz,client_comment_en,image.filename,avatar_image.filename]);
     } catch (error) {
         console.log(error);      
     }
 };
 
-const PUT = async ({clientId},{titleUz='',titleEn='',titleRu='',creating_canvas='',mounting='',Volume='',client_name_surname='',client_comment_ru='',client_comment_uz='',client_comment_en='',money},files) => {
+const PUT = async ({clientId},{titleUz='',titleEn='',titleRu='',client_name_surname='',client_comment_ru='',client_comment_uz='',client_comment_en=''},files) => {
     try {
-      return await fetch(PUTCLIENT, [clientId,titleUz,titleEn,titleRu,creating_canvas,mounting,Volume,client_name_surname,client_comment_ru,client_comment_uz,client_comment_en,files?.image[0]?.filename,files.avatar_image[0].filename,money]);
+      return await fetch(PUTCLIENT, [clientId,titleUz,titleEn,titleRu,client_name_surname,client_comment_ru,client_comment_uz,client_comment_en,files?.image[0]?.filename,files.avatar_image[0].filename]);
     } catch (error) {
         console.log(error); 
     }
