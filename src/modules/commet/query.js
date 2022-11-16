@@ -22,7 +22,7 @@ const PUTCLIENT = `
             client_comment_uz, 
             client_comment_en,
             image,
-            avatar_image,
+            avatar_image
         from comment
         where id = $1    
     ) update comment as c 

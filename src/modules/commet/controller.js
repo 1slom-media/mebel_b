@@ -25,11 +25,12 @@ const POST = async (req, res) => {
 const PUT = async (req, res) => {
     try {
       const client = await model.PUT(req.params,req.body,req.files);
-       res.status(202).json({
+      res.status(202).json({
         status:202,
         message:"client update",
         data:client
       })
+      console.log(client);
     } catch (error) {
       return new Error (error.message)
     }
