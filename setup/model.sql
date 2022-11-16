@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS contact(
     date timestamp default current_timestamp
 );
 
+
 CREATE TABLE IF NOT EXISTS comment(
     id serial primary key,
     titleUz varchar(250) not null, 
@@ -40,7 +41,8 @@ CREATE TABLE IF NOT EXISTS ceiling(
     titleRu varchar(250) not null,
     date timestamp default current_timestamp
 );
-drop table cuisine ;
+
+
 CREATE TABLE IF NOT EXISTS cuisine(
     id serial primary key,
     ceiling_id int references ceiling(id) not null,

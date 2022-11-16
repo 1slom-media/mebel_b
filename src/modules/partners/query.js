@@ -63,7 +63,7 @@ const PUTPARTNERS = `
                 end,
                 partner_name = 
                 case 
-                    when length($8) > 1 then $8
+                    when length($9) > 1 then $9
                     else o.partner_name
                 end
     from old_partners as o   

@@ -30,6 +30,7 @@ const PUT = async (req, res) => {
         message:"partners update",
         data:partners
       })
+      console.log(partners);
     } catch (error) {
       return new Error (error.message)
     }
