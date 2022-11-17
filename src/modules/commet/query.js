@@ -3,6 +3,7 @@ const GETCLIENT = `
         c.*
     from comment as c
     where case when $1 > 0 then c.id = $1 else true end
+    order by c.id
 `;
 
 const POSTCLIENT =`

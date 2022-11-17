@@ -9,6 +9,7 @@ where case
                             else true
                             end 
 group by c.id
+order by c.id
 `;
 
 const POSTCEILING =`

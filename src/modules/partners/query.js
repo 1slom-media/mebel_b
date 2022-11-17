@@ -3,6 +3,7 @@ const GETPARTNERS = `
         p.*
     from partners as p
     where case when $1 > 0 then p.id = $1 else true end
+    order by p.id
 `;
 
 const POSTPARTNERS =`

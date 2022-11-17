@@ -3,6 +3,7 @@ const GETBANNERS = `
         b.*
     from banners as b
     where case when $1 > 0 then b.banner_id = $1 else true end
+    order by b.banner_id
 `;
 
 const POSTBANNERS =`

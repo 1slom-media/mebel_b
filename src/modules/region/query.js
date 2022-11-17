@@ -9,6 +9,7 @@ where case
                             else true
                             end 
 group by r.id
+order by r.id
 `;
 
 
